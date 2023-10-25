@@ -28,20 +28,14 @@ check.addEventListener('click', function() {
         if (score1 > 0) {
             score1 = score1 - 1
         }
-        // if (score1 == 0) {
-        //     document.querySelector('.hero').style.backgroundColor = 'red'
-        //     document.querySelector('.GTN').textContent = 'Game over try again to play'
-        // }
+    
 
     } else if (number.value == Randomnumber) {
         result.textContent = 'conratulations you are winner'
         document.querySelector('.GTN').textContent = 'conratulations you won'
         guessNumber.textContent = Randomnumber
         document.querySelector('.hero').style.backgroundColor = '#01ff70'
-            // score1 = score1 - 1
-            // if (score1 > 0) {
-            //     score1 = score1 - 1
-            // }
+        
         if (score1 > highScore.textContent) {
             highScore.textContent = score1
         }
