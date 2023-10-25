@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number guess</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+        
+        .hero {
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .uprtop {
+            display: flex;
+            justify-content: space-between;
+            font-size: 40px;
+            padding: 10px;
+        }
+        
+        .lowertop {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            font-size: 60px;
+        }
+        
+        .again {
+            font-size: 30px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .RandomNo {
+            position: absolute;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            bottom: 51%;
+            left: 44%;
+            right: 44%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid white;
+            background-color: black;
+        }
+        
+        .bottomSec {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 20px;
+        }
+        
+        .left-side {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .rightside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 40px;
+        }
+        
+        .rightside.result {
+            padding: 50px;
+        }
+        
+        #number {
+            width: 200px;
+            height: 120px;
+            font-size: 40px;
+        }
+        
+        .check {
+            margin-top: 20px;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="hero">
+        <div class="top-section">
+            <div class="uprtop">
+                <button class="again">Again!</button>
+
+                <p>between 1 and 20</p>
+            </div>
+            <div class="lowertop">
+                <h1 class="GTN">guess the number!!!</h1>
+            </div>
+        </div>
+
+        <div class="middle-sec">
+            <hr>
+            <h1 class="RandomNo">?</h1>
+        </div>
+        <div class="bottomSec">
+            <div class="left-side">
+                <input type="number" name="number" id="number">
+                <button class="check">check</button>
+
+
+            </div>
+            <div class="rightside">
+                <p class="result">Start Guessing.....</p>
+                <p class="scorebox">score:<span class="score"> 20</span> </p>
+                <p class="highScorebox">Highscore: <span class="highScore"> 0</span></p>
+            </div>
+
+
+    </section>
+
+</body>
+<script src="./numbergamescript.js"></script>
+
+</html>
